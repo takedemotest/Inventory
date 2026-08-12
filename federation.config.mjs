@@ -4,7 +4,8 @@ export default withNativeFederation({
   name: 'inventory',
 
   exposes: {
-    './Component': './src/app/app.ts',
+    './physicalInventoryModule': './src/app/physical-inventory/physical-inventory-component.ts',
+    './OperationalUtilityResourcesModule': './src/app/operational-utility-resources/operational-utility-resources.ts',
   },
 
   shared: {
